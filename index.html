@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- TOPBAR -->
+<div class="topbar"> Usa el código <strong>BIENVENIDO10</strong> y obtén 10% de descuento en tu primera compra — <a href="#eventos">Ver eventos</a></div>
+ 
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">EVENTOS <span>PE</span></a>
+    <div class="nav-links">
+      <a href="#eventos">Eventos</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#seguridad">Seguridad</a>
+      <a href="#contacto">Contacto</a>
+      <div class="nav-cart" onclick="showToast('Carrito vacío — Selecciona un evento')">
+        <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0020.01 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+        Carrito <span class="cart-count">0</span>
+      </div>
+    </div>
+  </div>
+</nav>
+ 
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-tag">Plataforma #1 en Perú</div>
+        <h1 class="hero-title">Vive la mejor <span>experiencia</span> en eventos</h1>
+        <p class="hero-desc">Compra tus entradas de forma segura para los mejores conciertos, festivales, teatro y eventos deportivos en todo el Perú. Pago 100% seguro con Culqi.</p>
+        <div class="hero-btns">
+          <a href="#eventos" class="btn btn-main"><svg viewBox="0 0 24 24"><path d="M20 12V4H4v8c1.1 0 2 .9 2 2s-.9 2-2 2v4h16v-4c-1.1 0-2-.9-2-2s.9-2 2-2z"/></svg>Ver eventos disponibles</a>
+          <a href="#como-funciona" class="btn btn-ghost">¿Cómo funciona?</a>
+        </div>
+        <div class="hero-trust">
+          <div class="ht"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Pago seguro con Culqi</div>
+          <div class="ht"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Entradas digitales con QR</div>
+          <div class="ht"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>SSL 256-bit</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hc-img"><span class="hc-live">En venta</span></div>
+          <div class="hc-body">
+            <div class="hc-name">Noche de Rock 2025</div>
+            <div class="hc-meta">Sáb 24 May · Arena Lima · San Isidro</div>
+            <div class="hc-price-row">
+              <div class="hc-price">S/ 80 <small>desde</small></div>
+              <button class="hc-buy" onclick="showToast('Agregado al carrito')">🛒 Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- EVENTOS / PRODUCTOS (requisito 1,2,3,4) -->
+<section class="section" id="eventos" style="padding-top:40px">
+  <div class="container">
+    <div class="section-tag">Próximos eventos</div>
+    <div class="section-title">Encuentra tu próxima experiencia</div>
+    <div class="section-sub">Entradas disponibles para los eventos más esperados. Todos con entrega digital inmediata.</div>
+    <div class="ev-grid">
+ 
+      <div class="ev-card">
+        <div class="ev-img" style="background:linear-gradient(135deg,#1a0030,#300050)"><div class="ev-emoji">🎤</div><span class="ev-cat">Concierto</span></div>
+        <div class="ev-body"><div class="ev-date">SAB 14 JUN 2025 · 8:30 PM</div><div class="ev-name">Alicia Keys en Lima 2025</div><div class="ev-desc">La icónica artista estadounidense llega a Lima con su gira mundial "Keys to the World Tour". Una noche inolvidable de R&B, soul y piano.</div><div class="ev-venue"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Arena Lima — San Isidro</div><div class="ev-foot"><div class="ev-price">S/ 150<small>desde · 6 zonas disponibles</small></div><button class="ev-buy" onclick="showToast('Agregado al carrito')"><svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42l.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0020.01 4H5.21l-.94-2H1z"/></svg>Comprar</button></div></div>
+      </div>
+ 
+      <div class="ev-card">
+        <div class="ev-img" style="background:linear-gradient(135deg,#200008,#400010)"><div class="ev-emoji">🎸</div><span class="ev-cat">Concierto</span></div>
+        <div class="ev-body"><div class="ev-date">SAB 24 MAY 2025 · 8:00 PM</div><div class="ev-name">Noche de Rock 2025</div><div class="ev-desc">Festival de rock con las mejores bandas nacionales e internacionales. 8 horas de música en vivo, food trucks y zona VIP exclusiva.</div><div class="ev-venue"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Arena Lima — San Isidro</div><div class="ev-foot"><div class="ev-price">S/ 80<small>desde · 5 zonas disponibles</small></div><button class="ev-buy" onclick="showToast('Agregado al carrito')"><svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42l.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0020.01 4H5.21l-.94-2H1z"/></svg>Comprar</button></div></div>
+      </div>
+ 
+      <div class="ev-card">
+        <div class="ev-img" style="background:linear-gradient(135deg,#001520,#003040)"><div class="ev-emoji">🎭</div><span class="ev-cat">Teatro</span></div>
+        <div class="ev-body"><div class="ev-date">VIE 6 JUN 2025 · 7:00 PM</div><div class="ev-name">El Fantasma de la Ópera</div><div class="ev-desc">La obra musical más icónica del mundo llega a Lima. Producción internacional con elenco de Broadway. Vestuario, escenografía y efectos de primer nivel.</div><div class="ev-venue"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Teatro Municipal — Lima Centro</div><div class="ev-foot"><div class="ev-price">S/ 120<small>desde · 4 zonas disponibles</small></div><button class="ev-buy" onclick="showToast('Agregado al carrito')"><svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42l.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0020.01 4H5.21l-.94-2H1z"/></svg>Comprar</button></div></div>
+      </div>
+ 
+      <div class="ev-card">
+        <div class="ev-img" style="background:linear-gradient(135deg,#0a1800,#1a3000)"><div class="ev-emoji">⚽</div><span class="ev-cat">Deportes</span></div>
+        <div class="ev-body"><div class="ev-date">DOM 1 JUN 2025 · 3:30 PM</div><div class="ev-name">Universitario vs Alianza Lima</div><div class="ev-desc">El clásico del fútbol peruano. Jornada 15 de la Liga 1. Ambiente único en el estadio más grande del país. Preventa exclusiva online.</div><div class="ev-venue"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Estadio Monumental — Ate</div><div class="ev-foot"><div class="ev-price">S/ 45<small>desde · 3 zonas disponibles</small></div><button class="ev-buy" onclick="showToast('Agregado al carrito')"><svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42l.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0020.01 4H5.21l-.94-2H1z"/></svg>Comprar</button></div></div>
+      </div>
+ 
+      <div class="ev-card">
+        <div class="ev-img" style="background:linear-gradient(135deg,#1a0a00,#301500)"><div class="ev-emoji">🎪</div><span class="ev-cat">Festival</span></div>
+        <div class="ev-body"><div class="ev-date">SAB 21 JUN 2025 · 12:00 PM</div><div class="ev-name">Lima Food & Music Fest</div><div class="ev-desc">El festival gastronómico y musical más grande de Lima. 40 restaurantes, 12 bandas en vivo, zona infantil, craft beer y talleres de cocina.</div><div class="ev-venue"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Parque de la Exposición — Lima</div><div class="ev-foot"><div class="ev-price">S/ 35<small>desde · entrada general</small></div><button class="ev-buy" onclick="showToast('Agregado al carrito')"><svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42l.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0020.01 4H5.21l-.94-2H1z"/></svg>Comprar</button></div></div>
+      </div>
+ 
+      <div class="ev-card">
+        <div class="ev-img" style="background:linear-gradient(135deg,#10001a,#200030)"><div class="ev-emoji">🎹</div><span class="ev-cat">Concierto</span></div>
+        <div class="ev-body"><div class="ev-date">VIE 4 JUL 2025 · 9:00 PM</div><div class="ev-name">Jazz Night — Piano & Voz</div><div class="ev-desc">Noche íntima de jazz en el Teatro Peruano Japonés. Cuarteto de jazz, piano de cola, coctelería premium y finger food incluido en zona VIP.</div><div class="ev-venue"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Teatro Peruano Japonés — Jesús María</div><div class="ev-foot"><div class="ev-price">S/ 90<small>desde · 3 zonas disponibles</small></div><button class="ev-buy" onclick="showToast('Agregado al carrito')"><svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42l.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0020.01 4H5.21l-.94-2H1z"/></svg>Comprar</button></div></div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+<!-- CATEGORÍAS -->
+<section class="section" id="categorias">
+  <div class="container">
+    <div class="section-tag">Explora por categoría</div>
+    <div class="section-title">Encuentra lo que te apasiona</div>
+    <div class="cats">
+      <div class="cat"><div class="cat-emoji"></div><div class="cat-name">Conciertos</div><div class="cat-count">24 eventos</div></div>
+      <div class="cat"><div class="cat-emoji"></div><div class="cat-name">Teatro</div><div class="cat-count">12 eventos</div></div>
+      <div class="cat"><div class="cat-emoji"></div><div class="cat-name">Deportes</div><div class="cat-count">18 eventos</div></div>
+      <div class="cat"><div class="cat-emoji"></div><div class="cat-name">Festivales</div><div class="cat-count">8 eventos</div></div>
+      <div class="cat"><div class="cat-emoji"></div><div class="cat-name">Stand-Up</div><div class="cat-count">6 eventos</div></div>
+      <div class="cat"><div class="cat-emoji"></div><div class="cat-name">Conferencias</div><div class="cat-count">10 eventos</div></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CÓMO FUNCIONA -->
+<section class="section" id="como-funciona">
+  <div class="container">
+    <div class="section-tag">Proceso simple</div>
+    <div class="section-title">¿Cómo comprar tus entradas?</div>
+    <div class="steps">
+      <div class="step"><div class="step-num">01</div><div class="step-ico"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5z"/></svg></div><div class="step-title">Elige tu evento</div><div class="step-desc">Explora nuestro catálogo de eventos y selecciona el que más te guste.</div></div>
+      <div class="step"><div class="step-num">02</div><div class="step-ico"><svg viewBox="0 0 24 24"><path d="M20 12V4H4v8c1.1 0 2 .9 2 2s-.9 2-2 2v4h16v-4c-1.1 0-2-.9-2-2s.9-2 2-2z"/></svg></div><div class="step-title">Selecciona zona</div><div class="step-desc">Elige la zona, cantidad de entradas y aplica cupones de descuento.</div></div>
+      <div class="step"><div class="step-num">03</div><div class="step-ico"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/></svg></div><div class="step-title">Paga seguro</div><div class="step-desc">Paga con tarjeta, Yape, Plin o transferencia. Procesado por Culqi con 3DS.</div></div>
+      <div class="step"><div class="step-num">04</div><div class="step-ico"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div class="step-title">Recibe tu entrada</div><div class="step-desc">Entrega inmediata por email con código QR. Presenta en la entrada del evento.</div></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- SEGURIDAD (requisito 5) -->
+<section class="section" id="seguridad">
+  <div class="container">
+    <div class="section-tag">Tu compra protegida</div>
+    <div class="section-title">Pago 100% seguro</div>
+    <div class="security">
+      <div class="sec-left">
+        <p style="font-size:14px;color:var(--g5);line-height:1.8;margin-bottom:14px">Todas las transacciones son procesadas por <strong style="color:var(--cream)">Culqi</strong>, la pasarela de pagos líder en Perú. Tu información financiera nunca se almacena en nuestros servidores.</p>
+        <div class="sec-badges">
+          <div class="sec-badge"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>SSL 256-bit</div>
+          <div class="sec-badge"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>PCI DSS</div>
+          <div class="sec-badge"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>3D Secure</div>
+          <div class="sec-badge"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Anti-fraude</div>
+          <div class="sec-badge"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Culqi Verified</div>
+        </div>
+      </div>
+      <div class="sec-right">
+        <div class="sec-card"><div class="sec-card-ico" style="background:rgba(0,230,138,.08)"><svg viewBox="0 0 24 24" style="fill:var(--ok)"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/></svg></div><div class="sec-card-info"><div class="sec-card-nm">Visa / Mastercard / Amex</div><div class="sec-card-sub">Crédito y débito</div></div></div>
+        <div class="sec-card"><div class="sec-card-ico" style="background:rgba(137,46,228,.08)"><svg viewBox="0 0 24 24" style="fill:#892EE4"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99z"/></svg></div><div class="sec-card-info"><div class="sec-card-nm">Yape / Plin</div><div class="sec-card-sub">Billeteras digitales</div></div></div>
+        <div class="sec-card"><div class="sec-card-ico" style="background:rgba(77,171,247,.08)"><svg viewBox="0 0 24 24" style="fill:var(--bl)"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg></div><div class="sec-card-info"><div class="sec-card-nm">Transferencia / PagoEfectivo</div><div class="sec-card-sub">BCP, BBVA, Interbank</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- TESTIMONIOS -->
+<section class="section">
+  <div class="container">
+    <div class="section-tag">Opiniones de usuarios</div>
+    <div class="section-title">Miles de personas confían en nosotros</div>
+    <div class="test-grid">
+      <div class="test"><div class="test-stars">★★★★★</div><div class="test-text">Compré mis entradas para el concierto de rock y todo fue súper rápido. Las entradas llegaron al instante a mi correo con el QR. Excelente plataforma.</div><div class="test-author"><div class="test-av" style="background:#2A63E6">CM</div><div><div class="test-nm">Carlos Mendoza</div><div class="test-loc">Lima, Perú</div></div></div></div>
+      <div class="test"><div class="test-stars">★★★★★</div><div class="test-text">Pagué con Yape y fue instantáneo. Me encantó que puedo ver mis entradas desde la app. La sección de zonas es muy clara para elegir dónde sentarme.</div><div class="test-author"><div class="test-av" style="background:#FF5B1F">AT</div><div><div class="test-nm">Ana Torres</div><div class="test-loc">Arequipa, Perú</div></div></div></div>
+      <div class="test"><div class="test-stars">★★★★★</div><div class="test-text">Usé un cupón de descuento y todo funcionó perfecto. El proceso de compra es muy claro y me dio confianza ver que usan Culqi como pasarela de pago.</div><div class="test-author"><div class="test-av" style="background:#00C27C">JG</div><div><div class="test-nm">José García</div><div class="test-loc">Trujillo, Perú</div></div></div></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- STATS -->
+<section class="section">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-box"><div class="stat-val">50K+</div><div class="stat-label">Entradas vendidas</div></div>
+      <div class="stat-box"><div class="stat-val">200+</div><div class="stat-label">Eventos realizados</div></div>
+      <div class="stat-box"><div class="stat-val">99.8%</div><div class="stat-label">Transacciones exitosas</div></div>
+      <div class="stat-box"><div class="stat-val">4.9★</div><div class="stat-label">Calificación promedio</div></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CTA -->
+<section class="section" id="contacto">
+  <div class="container">
+    <div class="cta">
+      <div class="cta-title">¿Listo para vivir la experiencia?</div>
+      <div class="cta-desc">Regístrate gratis y recibe alertas de nuevos eventos, preventas exclusivas y descuentos especiales.</div>
+      <div class="cta-btns">
+        <a href="#eventos" class="btn btn-main"><svg viewBox="0 0 24 24"><path d="M20 12V4H4v8c1.1 0 2 .9 2 2s-.9 2-2 2v4h16v-4c-1.1 0-2-.9-2-2s.9-2 2-2z"/></svg>Comprar entradas ahora</a>
+        <button class="btn btn-ghost" onclick="showToast('Formulario de contacto próximamente')">Contáctanos</button>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER (requisito 6: redes, términos, políticas, libro de reclamaciones) -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">EVENTOS <span>PE</span></div>
+        <div class="footer-desc">Plataforma de venta de entradas online para eventos en todo el Perú. Pago seguro, entrega digital instantánea.</div>
+        <div class="footer-social">
+          <a class="f-social" href="https://facebook.com/eventospe" target="_blank" title="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+          <a class="f-social" href="https://instagram.com/eventospe" target="_blank" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2m-.2 2A3.6 3.6 0 004 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5M12 7a5 5 0 110 10 5 5 0 010-10m0 2a3 3 0 100 6 3 3 0 000-6z"/></svg></a>
+          <a class="f-social" href="https://tiktok.com/@eventospe" target="_blank" title="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 015.9 3H3.9v10.38a2.6 2.6 0 01-5.2.14 2.6 2.6 0 013.22-2.52V8.93a5.62 5.62 0 106.4 5.57V9.2a7.3 7.3 0 004.28 1.37V7.5a4.28 4.28 0 01-2.4-.68z" transform="translate(4 2)"/></svg></a>
+          <a class="f-social" href="https://twitter.com/eventospe" target="_blank" title="Twitter / X"><svg viewBox="0 0 24 24"><path d="M22.46 6c-.85.38-1.78.64-2.73.76 1-.6 1.76-1.54 2.12-2.67-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.42-.01-.63.96-.7 1.8-1.56 2.46-2.55z"/></svg></a>
+          <a class="f-social" href="https://youtube.com/@eventospe" target="_blank" title="YouTube"><svg viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Eventos</h4>
+        <a href="#eventos">Conciertos</a>
+        <a href="#eventos">Teatro</a>
+        <a href="#eventos">Deportes</a>
+        <a href="#eventos">Festivales</a>
+        <a href="#eventos">Stand-Up</a>
+        <a href="#eventos">Conferencias</a>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <a href="#" onclick="openLegal('about')">Sobre nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#" onclick="openLegal('faq')">Preguntas frecuentes</a>
+        <a href="#" onclick="openLegal('organizadores')">Para organizadores</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#" onclick="openLegal('terminos')">Términos y condiciones</a>
+        <a href="#" onclick="openLegal('privacidad')">Política de privacidad</a>
+        <a href="#" onclick="openLegal('devoluciones')">Cambios y devoluciones</a>
+        <a href="#" onclick="openLegal('reclamaciones')">Libro de reclamaciones</a>
+        <a href="#" onclick="openLegal('cookies')">Política de cookies</a>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <div class="footer-copy">© 2025 Eventos PE S.A.C. — RUC 20612345678 — Lima, Perú. Todos los derechos reservados.</div>
+      <div class="footer-links">
+        <a href="#" onclick="openLegal('terminos')">Términos</a>
+        <a href="#" onclick="openLegal('privacidad')">Privacidad</a>
+        <a href="#" onclick="openLegal('devoluciones')">Devoluciones</a>
+        <a href="#" onclick="openLegal('reclamaciones')">Libro de reclamaciones</a>
+      </div>
+      <div class="footer-badges">
+        <div class="fb"><svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2z"/></svg>SSL</div>
+        <div class="fb"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>CULQI</div>
+        <div class="fb"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>PCI DSS</div>
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+<!-- MODALES LEGALES -->
+<div class="mo" id="moLegal">
+  <div class="modal">
+    <div class="modal-h"><h3 id="legalTitle">Términos y condiciones</h3><button class="modal-close" onclick="closeLegal()">✕</button></div>
+    <div class="modal-body" id="legalBody"></div>
+  </div>
+</div>
+ 
+<div class="toast t-ok" id="toast" style="background:var(--gold);color:var(--dark)"><svg viewBox="0 0 24 24" style="fill:var(--dark)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span id="toastMsg">OK</span></div>
+<script src="idex.js"></script>
+</body>
+</html>
+</body>
+</html>
